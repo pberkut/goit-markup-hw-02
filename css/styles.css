@@ -24,7 +24,7 @@
   /* Others */
 }
 
-/* Reset */
+/* Reset styles*/
 
 a {
   text-decoration: none;
@@ -37,7 +37,7 @@ ul {
 
 body {
   font-family: var(--main-font);
-  font-size: 14px;
+  color: var(--main-txt-cl);
 }
 
 /* =====================
@@ -112,6 +112,7 @@ Hero section
 }
 
 .hero .btn {
+  font-family: inherit;
   font-weight: var(--font-weight-bold);
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -120,13 +121,14 @@ Hero section
   background-color: var(--accent-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /* =====================
 Benefits section
 ===================== */
 .benefits {
-  background-color: var(--white-bg-cl);
+  background-color: var(--main-bg-cl);
 }
 
 .benefits-title {
@@ -135,7 +137,6 @@ Benefits section
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-txt-cl);
 }
 
 .benefits-desc {
@@ -150,7 +151,7 @@ Benefits section
 About section
 ===================== */
 .about {
-  background-color: var(--white-bg-cl);
+  background-color: var(--main-bg-cl);
 }
 .about-title {
   font-weight: var(--font-weight-bold);
@@ -158,7 +159,6 @@ About section
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-txt-cl);
 }
 
 /* =====================
@@ -168,13 +168,18 @@ Team section
   background-color: var(--grey-bg-cl);
 }
 
+.team-card {
+  background: var(--white-bg-cl);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-title {
   font-weight: var(--font-weight-bold);
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-txt-cl);
 }
 
 .team-name {
@@ -183,7 +188,6 @@ Team section
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-txt-cl);
 }
 
 .team-position {
@@ -191,6 +195,55 @@ Team section
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-cl);
+}
+
+/* =====================
+Portfolio section
+===================== */
+.portfolio {
+  background-color: var(--white-bg-cl);
+}
+
+/* Filter button */
+.filter-btn {
+  font-family: inherit;
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+  background-color: var(--grey-bg-cl);
+  border-radius: 4px;
+  border-color: var(--grey-bg-cl);
+  border-width: 0;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--white-txt-cl);
+  background-color: var(--accent-txt-cl);
+}
+
+/* Gallery portfolio group */
+.portfolio-card {
+  border: 1px solid #eeeeee;
+}
+
+.name-project {
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.desc-project {
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--grey-txt-cl);
 }
@@ -225,6 +278,11 @@ Footer page
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-txt-cl);
 }
 
 /* =====================
