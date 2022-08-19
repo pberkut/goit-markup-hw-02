@@ -2,28 +2,37 @@
   /* Fonts */
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
 
   /* Text color */
   --main-txt-cl: #212121;
   --accent-txt-cl: #2196f3;
+  --grey-txt-cl: #757575;
+  --white-txt-cl: #fff;
+  --black-txt-cl: #000;
 
   /* Background color */
+  --header-bg-cl: #ececec;
   --main-bg-cl: #f5f5f5;
-  --secondary-bg-cl: #2f303a;
+  --dark-bg-cl: #2f303a;
+  --grey-bg-cl: #f5f4fa;
+  --white-bg-cl: #fff;
 
-  /* Action color */
-  --current-bg-cl: #2196f3;
   /* Others */
 }
 
 /* Reset */
 
-.link {
+a {
   text-decoration: none;
 }
 
-.list {
+ul {
   list-style: none;
+  padding: 0;
 }
 
 body {
@@ -31,28 +40,196 @@ body {
   font-size: 14px;
 }
 
-/* header */
-.header {
-  background-color: #ffffff;
+/* =====================
+Header page
+===================== */
+.page-header {
+  background-color: var(--header-bg-cl);
 }
 
-/* logo */
+/* Logo */
 .logo {
   font-family: var(--secondary-font);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-size: 26px;
   line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+
+.logo-accent-span {
+  color: var(--accent-txt-cl);
+}
+
+.logo-header-span {
+  color: var(--black-txt-cl);
+}
+
+/* main navigation */
+.nav-link {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-medium);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+.main-nav .current {
+  color: var(--accent-txt-cl);
+}
+
+.contact-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--grey-txt-cl);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-txt-cl);
+}
+
+/* =====================
+Hero section
+===================== */
+.hero {
+  background-color: var(--dark-bg-cl);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+}
+
+.hero .btn {
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--white-txt-cl);
+  background-color: var(--accent-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* =====================
+Benefits section
+===================== */
+.benefits {
+  background-color: var(--white-bg-cl);
+}
+
+.benefits-title {
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-txt-cl);
+}
+
+.benefits-desc {
+  font-weight: var(--font-weight-regular);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-cl);
+}
+
+/* =====================
+About section
+===================== */
+.about {
+  background-color: var(--white-bg-cl);
+}
+.about-title {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
 
-.logo-span {
-  color: var(--accent-txt-cl);
+/* =====================
+Team section
+===================== */
+.team {
+  background-color: var(--grey-bg-cl);
 }
 
-/* main navigation */
+.team-title {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
 
-/* Add others style */
+.team-name {
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.team-position {
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey-txt-cl);
+}
+
+/* =====================
+Footer page
+===================== */
+.page-footer {
+  background-color: var(--dark-bg-cl);
+}
+.footer-logo {
+  color: var(--white-txt-cl);
+}
+
+.logo-footer-span {
+  color: var(--white-txt-cl);
+}
+
+.address {
+  text-decoration: none;
+  font-weight: var(--font-weight-regular);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--white-txt-cl);
+}
+
+.footer-link {
+  font-weight: var(--font-weight-regular);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* =====================
+Others style
+===================== */
 .visually-hidden {
   position: absolute;
   width: 1px;
