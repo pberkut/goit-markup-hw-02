@@ -22,13 +22,13 @@
   /* Others */
 }
 
-/* Reset styles*/
+/* Preset styles*/
 
-a {
+.link {
   text-decoration: none;
 }
 
-ul {
+.list {
   list-style: none;
   padding: 0;
 }
@@ -37,6 +37,7 @@ ul {
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
+  background-color: var(--white-bg-cl);
 }
 
 /* =====================
