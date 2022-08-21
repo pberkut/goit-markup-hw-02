@@ -15,8 +15,6 @@
   --black-txt-cl: #000;
 
   /* Background color */
-  /* --header-bg-cl: #ececec; */
-  /* --main-bg-cl: #f5f5f5; */
   --dark-bg-cl: #2f303a;
   --grey-bg-cl: #f5f4fa;
   --white-bg-cl: #fff;
@@ -35,7 +33,7 @@ ul {
   padding: 0;
 }
 
-/* Default settings */
+/* Default styles */
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
@@ -132,7 +130,6 @@ Benefits section
 }
 
 .benefits-desc {
-  /* font-weight: var(--font-weight-regular); */
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -180,8 +177,6 @@ Team section
 }
 
 .team-position {
-  /* font-weight: var(--font-weight-regular); */
-  /* font-size: 16px; */
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
@@ -250,7 +245,6 @@ Footer page
 
 .address {
   text-decoration: none;
-  /* font-weight: var(--font-weight-regular); */
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -259,8 +253,6 @@ Footer page
 }
 
 .footer-link {
-  /* font-weight: var(--font-weight-regular); */
-  /* font-size: 14px; */
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
