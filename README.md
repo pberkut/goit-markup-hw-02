@@ -1,2 +1,2 @@
 # goit-markup-hw-02
-Finish HW#2
+Complete HW#2
